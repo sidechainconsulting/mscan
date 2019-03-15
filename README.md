@@ -19,7 +19,9 @@ mscan requires an input file of IP addresses to scan, one per line.
 
 For example, *inputfile.txt*:
 `192.168.1.1
+
 192.168.1.2
+
 192.168.1.3`
 
 A convenient way to create output of IP address ranges is to use __nmap__:
