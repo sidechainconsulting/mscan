@@ -18,11 +18,11 @@ and run mscan:
 mscan requires an input file of IP addresses to scan, one per line. 
 
 For example, *inputfile.txt*:
-`192.168.1.1
-
+```
+192.168.1.1
 192.168.1.2
-
-192.168.1.3`
+192.168.1.3
+```
 
 A convenient way to create output of IP address ranges is to use __nmap__:
 
@@ -32,13 +32,15 @@ There is also a __Debug__ mode you can put mscan in by altering the value on lin
 
 # Usage Example
 Create a file of IP addresses, called *ipfile*:
-`162.243.52.49
+```
+162.243.52.49
 192.168.1.1
 162.243.52.50
 13.59.2.52
 192.241.229.61
 52.199.158.48
-160.16.238.21`
+160.16.238.21
+```
 
 Copy the file into the same directory as *mscan.py*. 
 
@@ -46,11 +48,13 @@ Run mscan:
 `python mscan.py ipfile outfile`
 
 Output to the screen should look something like:
-`Preparing to scan 7 IP addresses
+```
+Preparing to scan 7 IP addresses
 SUCCESS -- Connected to open MongoDB at IP 192.241.229.61
 SUCCESS -- Connected to open MongoDB at IP 160.16.238.21
 SUCCESS -- Connected to open MongoDB at IP 13.59.2.52
-SUCCESS -- Connected to open MongoDB at IP 52.199.158.48`
+SUCCESS -- Connected to open MongoDB at IP 52.199.158.48
+```
 
 This indicates that of all the IP addresses scanned, those four were insecure MongoDB databases. Those IP's were written to the file *outfile* in our example.
 
